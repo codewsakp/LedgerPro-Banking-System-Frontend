@@ -1,0 +1,2 @@
+import { ArrowDownRight, ArrowUpRight, Wallet } from 'lucide-react';
+export default function StatCard({ label, value, note, icon: Icon = Wallet, tone = 'blue' }) { return <article className="stat-card"><div className="stat-top"><span>{label}</span><span className={`stat-icon ${tone}`}><Icon size={19}/></span></div><strong className="stat-value">{value}</strong><div className="stat-note"><span className="note-neutral">{note || 'Account overview'}</span></div></article>; }
